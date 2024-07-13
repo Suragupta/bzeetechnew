@@ -1,0 +1,141 @@
+@media(max-width:2560px) {
+
+    
+    .nav-item a1 {
+        padding: 10px 20px;
+        list-style: none;
+        color: white;
+    }
+
+
+    
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .col-md-10 h3{
+        text-align: center;
+    }
+    
+    .dashboard-section>.container-fluid>.row>.col-md-2>.col-md-12 {
+        background-color: blue;
+        border-radius: 50px;
+        padding: 5px 10px;
+
+    }
+
+    .dashboard-list li {
+        padding: 10px 20px;
+        list-style: none;
+        color: white;
+    }
+
+    .dashboard-list li i {
+        padding: 10px;
+    }
+
+    .dashboard-section>.container>.row {
+        background-color: black;
+        color: white;
+    }
+
+
+
+
+    .dashboard-section>.container> {
+        background-color: black;
+        color: white;
+    }
+
+
+    .dashboard-section>.container-fluid>.row>.col-md-10 {
+        background-color: rgb(241, 241, 241);
+        height: 700px;
+
+
+    }
+
+    .dashboard-section>.container-fluid>.row>.col-md-10>.row>.col-md-4>div {
+        background-color: white;
+        border-radius: 20px;
+        height: 100px;
+        text-align: center;
+    }
+
+    .star button{
+        border: none;
+        
+    } 
+    .blue{
+        background-color: red;
+    }
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+@media(max-width:1920px) {}
+
+@media(max-width:1440px) {}
+
+@media(max-width:1024px) {}
+
+@media(max-width:768px) {}
+
+@media(max-width:576px) {}
+
+@media(max-width:475px) {}
+
+
+
+@media(max-width:375px) {}
+
+@media(max-width:320px) {}

@@ -1,0 +1,22 @@
+{% load static%}
+<section class="service-card">
+    <div class="container">
+      <h3>Our Services</h3>
+      <div class="row">
+        {% for i in card_data %}
+        <div class="col-md-4">
+          <div class="card" style="">
+            <img class="card-img-top" src={{i.card_img}} alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{i.card_title}}</h5>
+              <p class="card-text">{{i.card_description}}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        
+      
+      </div>
+    </div>
+</section>

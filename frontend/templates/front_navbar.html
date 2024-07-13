@@ -1,0 +1,100 @@
+{%load static%}
+<head>
+  <title> Bzeetech</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '../static/css/index.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+
+<section class="a">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <p><i class="fa-solid fa-envelope"></i>surajguptacse04@gmail.com</p>
+      </div>
+      <div class="col-md-3">
+        <p><i class="fa-solid fa-phone"></i>6203418568</p>
+      </div>
+      <div class="col-md-4">
+        <p><i class="fa-solid fa-address-book"></i>Manjhiaon</p>
+      </div>
+      <div class="col-md-2">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="b sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light custom-css">
+    <a class="navbar-brand custom-navbar-brand " href="#"><img src={% static '../static/assets/logo.jpg' %}> <span>BzeeTech </span></a>
+    <button class="navbar-toggler custom-button" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto apna-nav">
+        <li class="nav-item active custom-navbar-link">
+          <a class="nav-link custom-navbar-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-navbar-link" href="{% url 'about' %}">About Us</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle custom-navbar-link" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">App Development</a>
+            <a class="dropdown-item" href="#">Web Development</a>
+            <a class="dropdown-item" href="#">Software Development</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle custom-navbar-link" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Products
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">App Development</a>
+            <a class="dropdown-item" href="#">Web Development</a>
+            <a class="dropdown-item" href="#">Software Development</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-navbar-link" href="pages/contact.html">Contact Us</a>
+        </li>
+        <!-- <li class="nav-item">
+        </li>
+        <li class="nav-item">
+        </li> -->
+      </ul>
+      <a href={% url 'login' %}><button class="navbar-button" onclick="document.getElementById('id02').style.display='block'">Sign In</button></a>
+      <button class="navbar-button" onclick="document.getElementById('id02').style.display='block'">Request aQuote</button>
+
+    </div>
+    </div>
+  </nav>
+</section>

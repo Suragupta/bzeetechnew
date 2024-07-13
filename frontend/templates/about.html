@@ -1,0 +1,215 @@
+{% load static %}
+<htmL>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="{% static '../static/css/about.css' %}">
+    <link rel="stylesheet" href="{% static '../static/css/index.css' %}">
+
+</head>
+
+<body>
+    <section class="a">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p> <i class="fa-solid fa-envelope"></i> info@bzeetech.com</p>
+                </div>
+                <div class="col-md-3">
+                    <p><i class="fa-solid fa-phone"></i>+91-6203418568</p>
+                </div>
+                <div class="col-md-4">
+                    <p><i class="fa-solid fa-address-book"></i> Lowadih Ranchi - 834010, Jharkhand</p>
+                </div>
+                <div class="col-md-2">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="b sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light custom-css">
+            <a class="navbar-brand custom-navbar-brand " href="#"><img src="../assets/logo.jpg"> <span>BzeeTech
+                </span></a>
+            <button class="navbar-toggler custom-button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto apna-nav">
+                    <li class="nav-item active custom-navbar-link">
+                        <a class="nav-link custom-navbar-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-navbar-link" href="pages/about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle custom-navbar-link" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">App Development</a>
+                            <a class="dropdown-item" href="#">Web Development</a>
+                            <a class="dropdown-item" href="#">Software Development</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle custom-navbar-link" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">App Development</a>
+                            <a class="dropdown-item" href="#">Web Development</a>
+                            <a class="dropdown-item" href="#">Software Development</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-navbar-link" href="pages/contact.html">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                  </li>
+                  <li class="nav-item">
+                  </li> -->
+                </ul>
+                <button class="navbar-button" onclick="document.getElementById('id01').style.display='block'">
+                    SignIn</button>
+                <button class="navbar-button" onclick="document.getElementById('id02').style.display='block'">Request a
+                    Quote</button>
+
+            </div>
+            </div>
+        </nav>
+    </section>
+    <section class="about" id="aboutus">
+        <div class="container">
+            <img src={% static '../static/assets/aboutus.jpg' %}>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2> <u>Who We Are</u></h2>
+                    <p>Welcome to BzeeTech, where innovation meets excellence.</p>
+                    <p>We are a forward-thinking software development company dedicated to providing cutting-edge
+                        technology solutions tailored to meet</p>
+                    <p>the unique needs of businesses across various industries. </p>
+                    <p>Our mission is to transform ideas into reality through the power of software,</p>
+                    <p>driving growth and efficiency for our clients.</p>
+
+                </div>
+                <div class="col-md-6">
+                    <img src={% static '../static/assets/about2.jpg' %}>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src={% static '../static/assets/aboutusbg.jpg' %}>
+                
+                    </div>
+                    <div class="col-md-6">
+                        <h2> <u>Our Vision</u></h2>
+                        <p>To be a global leader in software development, recognized for our creativity, quality, and </p>
+                        <p>commitment to delivering unparalleled solutions that empower businesses to achieve their full
+                        </p>
+                        <p>potential. </p>
+                    </div>
+                </div>
+                <div class="row" id="our-mission">
+                    <div class="col-md-6">
+                        <h2> <u>Our Mission</u></h2>
+                        <p>Our mission is to deliver innovative and reliable software solutions that drive success for our clients.
+                            We are committed to:</p>
+                        <li>Innovation: Continuously pushing the boundaries of technology to create pioneering solutions.</li> 
+                        <li>Quality: Upholding the highest standards of excellence in every project we undertake.</li>
+                        <li>Customer Satisfaction: Building lasting relationships through exceptional service and support.</li>
+                    </div>
+                    <div class="col-md-6">
+                        <img src={% static '../static/assets/business.jpg' %}>
+                
+                    </div>
+                </div>
+
+        </div>
+    </section>
+    <section class="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <h4>Quick Link</h4>
+                        <li>Services</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <h4>Services</h4>
+                        <li>Web Development</li>
+                        <li>App Development</li>
+                        <li>Software Development</li>
+                        <li>Digital Marketing</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <h4>Head Office</h4>
+                        <li>2 nd. Floor, Mimec IT Park,
+                            Namkum Industrial Area, Lowadih
+                            Ranchi - 834010, Jharkhand</li>
+                        <li> +91 - 9386806214</li>
+                        <li> info@brightcodess.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <h4>Our Commitment</h4>
+                        <li> Quality Assurance</li>
+                        <li>Client Focus</li>
+                        <li>Dedicated Teams</li>
+                        <li>Unlimited Support</li>
+                        <li>Projects Within Deadline</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <section class="footer2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h5>© Copyright 2024. All Rights Reserved.</h4>
+                </div>
+                <div class="col-md-2">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</htmL>

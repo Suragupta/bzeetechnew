@@ -1,0 +1,599 @@
+* {
+    font-family: "Times New Roman", Times, serif;
+    
+    
+}
+
+
+@media(max-width:2560px) {
+     .sub-head-1>.container>.row>.col-md-6 img {
+        border-radius: 50px;
+
+    }
+    .sub-head-2>.container>.row>.col-md-6 img {
+        border-radius: 50px;
+
+    }
+    .img-div h2{
+        font-size: 70px;
+        margin-bottom: 100px;
+    }
+    .img-div p{
+        font-size: 40px;
+    }
+
+
+    .img-div{
+        margin-left: 548px;
+        margin-top: -769px;
+
+        position: absolute;
+          
+          
+            
+    }
+
+
+    .a{
+        border-bottom: 2px solid black;
+    }
+    
+    .a>.container>.row>.col-md-4 p{
+        margin-bottom: 0px;
+    }
+    .sub-head{
+        background-image: url(../assets/3540662.jpg);
+        background-attachment: fixed;
+    }
+    .sub-head>.container>.row>.col-md-6 img{
+        height: 250px;
+    }
+    .sub-head>.container>.row>.col-md-6{
+        color: white;
+        font-size: 20px;
+    }
+
+    .service-card>.container>.row>.col-md-4>.card{
+        height: 500px;
+    }
+    /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .navbar-button {
+    background-color: #1204aa;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 0px 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -moz-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+
+
+
+
+
+
+    .nav-button>.nav-link{
+        color: white;
+    }
+    .service-card>.container h3{
+        text-align: center;
+    }
+    .a {
+        background-color: aliceblue;
+
+    }
+    .custom-css{
+        background-color: aliceblue;
+    }
+   
+    
+    .navbar-brand  img{
+        width:25px;
+        height: 25px;
+        border-radius: 50px;
+
+    }
+
+
+
+    .heading>.container>.row>.col-md-6 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+    }
+
+    .heading>.container>.row>.col-md-6 h3 {
+        margin-top: 20%;
+        font-size: 25px;
+        text-align: center;
+
+    }
+
+    .heading {
+        background-image: url(../assets/main.jpg);
+        background-attachment: fixed;
+
+    }
+
+    .heading>.container>.row>.row>.col-md-6 img {
+        width: 100%;
+        height: 90%;
+        border-radius: 50px;
+    }
+
+    .heading>.container {
+        color: white;
+    }
+
+    .heading>.container>.row>.row>.col-md-6 h3 {
+        margin-top: 20%;
+        margin-left: 5%;
+
+    }
+    .foot{
+        background: linear-gradient(90deg, rgba(2,2,25,1) 6%, rgba(50,100,110,1) 52%, rgba(8,8,19,1) 92%);
+    }
+    .foot>.container{
+        color: white;
+    }
+    .foot>.container li{
+        color: rgba(255, 255, 255, 0.6);
+        list-style-type:none;
+    }
+    .footer2{
+        background-color: black;
+        padding:10px 20px;
+
+    }
+    .footer2>.container{
+        color:  rgba(255, 255, 255, 0.6);;
+    }
+    .footer2>.container>.row>.col-md-6 {
+        float: right;
+    }
+    .nav-button{
+        background-color: rgb(42, 13, 231);
+        color: white;
+        padding: 0px 20px;
+        border-radius: 50px;
+        margin: 5px;
+        border: none;
+    }
+    .service-card>.container>.row>.col-md-4>.card>.card-img-top{
+        width: auto;
+        height: 200px;
+    }
+}
+
+@media(max-width:1920px) {
+    .img-div h2{
+        font-size: 70px;
+        margin-bottom: 50px;
+    }
+    .img-div p{
+        font-size: 40px;
+    }
+
+
+    .img-div{
+        margin-left: 194px;
+        margin-top: -769px;
+
+        position: absolute;
+          
+          
+            
+    }
+
+
+    .apna-nav {
+        margin-left: 25%;
+        font-size: 20px;
+
+    }
+
+    .heading>.container>.row>.col-md-6 h3 {
+        margin-top: 20%;
+        font-size: 25px;
+        text-align: center;
+    }
+
+}
+
+@media(max-width:1440px) {
+
+    .img-div h2{
+        font-size: 70px;
+        margin-bottom: 50px;
+    }
+    .img-div p{
+        font-size: 40px;
+    }
+
+
+    .img-div{
+        margin-left: 140px;
+        margin-top: -567px;
+        position: absolute;
+          
+          
+            
+    }
+    .apna-nav {
+        margin-left: 25%;
+
+    }
+
+}
+
+@media(max-width:1024px) {
+    .img-div h2{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .img-div p{
+        font-size: 30px;
+    }
+
+
+    .img-div{
+        margin-left: 114px;
+        margin-top: -454px;
+        position: absolute;
+          
+          
+            
+    }
+
+
+
+    .heading>.container>.row>.col-md-6 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+    }
+
+    .heading>.container>.row>.col-md-6 h3 {
+        margin-top: 20%;
+
+    }
+
+    .heading {
+        background-image: url(../assets/main.jpg);
+
+    }
+
+    .heading>.container>.row>.row>.col-md-6 img {
+        width: 100%;
+        height: 90%;
+        border-radius: 50px;
+    }
+
+    .heading>.container {
+        color: white;
+    }
+
+    .heading>.container>.row>.row>.col-md-6 h3 {
+        margin-top: 20%;
+        margin-left: 5%;
+
+    }
+    
+}
+
+@media(max-width:768px) {
+    .img-div h2{
+        
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .img-div p{
+        font-size: 25px;
+    }
+
+
+    .img-div{
+        margin-left: 88px;
+        margin-top: -327px;
+        position: absolute;
+          
+          
+            
+    }
+
+    .foot>.container{
+        text-align:center ;
+    }
+    .footer2>.container{
+        text-align:center ;
+    }
+    .a {
+        display: none;
+    }
+    .heading>.container>.row {
+        padding: 5%;
+    }
+
+
+    .carousel-inner img {
+        height: auto;
+    }
+
+
+    .custom-navbar-brand span {}
+
+
+    .heading>.container>.row>.col-md-6 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+    }
+
+    .heading>.container>.row>.col-md-6 h3 {
+        margin-top: 20%;
+
+    }
+
+    .heading {
+        background-image: url(../assets/main.jpg);
+
+    }
+
+    .heading>.container>.row>.row>.col-md-6 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+    }
+
+    .heading>.container {
+        color: white;
+    }
+
+    .heading>.container>.row>.row>.col-md-6 h3 {
+        margin-top: 20%;
+        margin-left: 5%;
+
+
+    }
+}
+
+@media(max-width:576px) {
+
+    .img-div h2{
+        
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .img-div p{
+        font-size: 20px;
+    }
+
+
+    .img-div{
+        margin-left: 88px;
+        margin-top: -327px;
+        position: absolute;
+          
+          
+            
+    }
+    .carousel-item img{
+        height:450px;
+    }
+    .service-card>.container>.row>.col-md-4{
+        padding: 10px;
+    }
+    .custom-navbar-brand span {}
+
+
+
+    .heading>.container>.row {
+        padding: 5%;
+    }
+
+    
+
+    
+    
+    .navbar-brand img {
+        width: 40;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .carousel-inner img {
+        height: 500px;
+    }
+
+   
+
+
+    
+   
+    
+
+    
+
+    
+
+   
+}
+@media(max-width:425px) {
+    .img-div h2{
+        
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .img-div p{
+        font-size: 17px;
+    }
+
+
+    .img-div{
+        margin-left: 88px;
+        margin-top: -327px;
+        position: absolute;
+          
+          
+            
+    }
+    .carousel-item img{
+        height:400px;
+    }
+    
+}
+@media(max-width:375px) {
+    .carousel-item img{
+        height:350px;
+    }
+    
+
+    .img-div h2{
+        
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .img-div p{
+        font-size: 17px;
+    }
+
+
+    .img-div{
+        margin-left: 88px;
+        margin-top: -327px;
+        position: absolute;
+          
+          
+            
+    }
+}
+@media(max-width:320px) {
+    
+  /* Change styles for span and cancel button on extra small screens */ 
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+    .img-div h2{
+        
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .img-div p{
+        font-size: 17px;
+    }
+
+
+    .img-div{
+        margin-left: 88px;
+        margin-top: -327px;
+        position: absolute;
+          
+          
+            
+    }
+  }
+
+
+
+    

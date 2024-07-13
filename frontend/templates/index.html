@@ -1,0 +1,33 @@
+{% load static %}
+{% include 'front_navbar.html' %}
+{% include 'carousel.html'%}
+{% include 'service_card.html'%}
+{% include 'sub_heading.html'%}
+{% include 'testimonial.html'%}
+{% include 'front_footer.html'%}
+<section class="a">
+    <div class="container">
+      {% for i in user_data %}
+      <div class="row">
+        <div class="col-md-3">
+          <p><i class="fa-solid fa-envelope"></i> {{ i.email }}</p>
+        </div>
+        <div class="col-md-3">
+          <p><i class="fa-solid fa-phone"></i>{{ i.mobile }}</p>
+        </div>
+        <div class="col-md-4">
+          <p><i class="fa-solid fa-address-book"></i>{{ i.address }}</p>
+        </div>
+        <div class="col-md-2">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  
+
+

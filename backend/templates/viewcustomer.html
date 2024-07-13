@@ -1,0 +1,77 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+{% include 'sidebar.html' %}
+{% load static %}
+
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Dashboard</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">User list</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <div class="card m-5">
+        <div class="card-header bg-info">
+            <h3 class="card-title text-light" >User List</h3>
+        </div>
+<div class="card-body">
+    <table id="example1" class="table table-bordered table-striped">
+        <thead>
+          
+            <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Date of Birth</th>
+                <th>Addres</th>
+                <th>Service Type</th>
+                <th>Date</th>
+                <th>Application No.</th>
+                <th>Documents </th>
+                <th>User</th>
+                <th>Remark</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+           {% for i in list %} 
+            <tr>
+                <td>{{forloop.counter}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.mobile}}</td>
+                <td>{{i.dob}}</td>
+                <td>{{i.addr}}</td>
+                <td>{{i.service_type}}</td>
+                <td>{{i.curr_date}}</td>
+                <td>{{i.application_no}}</td>
+                <td><a href="{{i.image.url}}">View Img</a></td>
+                <td>{{i.user}}</td>
+                <td>{{i.remark}}</td>             
+                <td>
+                  <button class="btn btn-sm btn-outline-primary view_employee" data-id="" type="button"><i class="fa fa-eye"></i></button>
+                  <button class="btn btn-sm btn-outline-primary edit_employee" data-id="" type="button"><i class="fa fa-edit"></i></button>
+                  <a href="{% url 'Delete_customer' i.id %}"><button class="btn btn-sm btn-outline-danger remove_employee" data-id="" type="button"><i class="fa fa-trash"></i></button>
+                    
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+
+{% include 'footer.html' %}
+{% include 'footer_link.html' %}

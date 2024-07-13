@@ -1,0 +1,107 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+{% include 'sidebar.html' %}
+{% load static %}
+
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Dashboard</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Add Customer</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <div class="card m-5">
+        <div class="card-header bg-info">
+            <h3 class="card-title text-light" >Add Customer</h3>
+        </div>
+        
+          <div class="card-body">
+           <form method="POST"enctype="multipart/form-data">
+            {% csrf_token %}
+             <div class="form-row">
+              <div class="form-group col-md-3">
+                <label for="name"> Name</label>
+                <input type="text" id="name" class="form-control" name="cus_name" value="" placeholder="enter employee name...">          
+              </div>
+              <div class="form-group col-md-3">
+                <label for="name">Mobile</label>
+                <input type="numb" id="numb" class="form-control" name="cus_num"  value="" placeholder="Mobile...">          
+              </div>
+              <div class="form-group col-md-3">
+                <label for="name">Date of birth</label>
+                <input type="date" id="numb" class="form-control" name="date" value="" placeholder="Mobile...">          
+              </div>
+              <div class="form-group col-md-3">
+                <label for="name">Address</label>
+                <textarea class="form-control" id="addr" name="addr"></textarea>         
+              </div>
+            </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="name">Service Type</label>
+                <select class="form-control" name="service_type">
+                    <option value="">Select</option>
+                    <option value="pancard">PAN CARD</option>
+                    <option value="voterid">VOTER ID</option>
+                    <option value="passport">PASSPORT</option>
+                    <option value="photo">PHOTO</option>
+                    <option value="driving">DRIVING LICENCE</option>
+                    <option value="rationcard">RATION CARD</option>
+                    <option value="adharcard">AADHAR CARD</option>
+                    <option value="char_certifucate">CHARACTER CIRTIFICATE</option>
+                    <option value="railway">RAILWAYS</option>
+                  </select>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="name">Date</label>
+                <input type="date" id="numb" class="form-control" name="curr_date" placeholder="Mobile...">          
+              </div>
+                 <div class="form-group col-md-3">
+                  <label for="img">Upload Documents</label>
+                  <input type="file" id="img" class="form-control" name="img">
+                </div> 
+                <div class="form-group col-md-3">
+                    <label for="name">Application No.</label>
+                    <input type="numb" id="numb" class="form-control" name="apl_num" placeholder="Mobile...">          
+                  </div>   
+            </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="name"> User</label>
+                <input type="text" id="name" class="form-control" name="cus_user" value="" placeholder="enter employee name...">          
+              </div>
+              <div class="form-group col-md-3">
+                <label for="name">Remark</label>
+                <textarea class="form-control" id="addr" name="remark" value=""></textarea>         
+              </div> 
+        </div>    
+            <button class="btn btn-success">Updates</button>    
+        </div>   
+        
+        </div>
+        
+      </form> 
+     
+    </div>
+
+
+
+    
+</div>    
+
+
+{% include 'footer.html' %}
+{% include 'footer_link.html' %}

@@ -1,0 +1,16 @@
+.about>.container> img{
+    width: 800px;
+    height: 250px;
+}
+.about>.container>.row>.col-md-6 img{
+    width:100%;
+    height:300px;
+    border-radius: 50px;
+    
+}
+.about>.container>.row>.col-md-6 h2{
+    font-size: 40px;
+}
+.about>.container>.row>.col-md-6 p{
+    font-size: 20px;
+}

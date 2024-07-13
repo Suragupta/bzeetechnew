@@ -1,0 +1,63 @@
+{% include 'header.html' %}
+{% include 'navbar.html'%}
+{% include 'sidebar.html'%}    
+{% load static %}
+ 
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Dashboard</h1>
+        </div>
+        <!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Dashboard v1</li>
+          </ol>
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+   <!-- form start -->
+   <section class="form pull-center text-center p-5">
+    <div class="contaner-form">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 shadow text-muted p-3 mb-5 bg-white rounded">
+          <form method="POST">
+              {% csrf_token %}
+            <div class="mb-3">
+              <label for=" sampleInputEmail" class="form-label">Name</label>
+              <input type="text" name="name" class="form-control" id=" name" aria-describedby="emailHelp"/>
+            </div>
+            <div class="mb-3">
+              <label for=" sampleInputEmail" class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" id=" email" aria-describedby="emailHelp"/>
+            </div>
+            <div class="mb-3">
+              <label for="sampleInputPassword" class="form-label" >Password</label>
+              <input type="password" name="pass" class="form-control" id="pass"/>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="sampleCheck"/>
+              <label class="form-check-label" for="sampleCheck">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</div>
+{% include 'footer.html'%}
+{% include 'footer_link.html'%}      
